@@ -1,0 +1,70 @@
+Arguments: 
+  /Users/thejoker/.nvm/versions/node/v10.5.0/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /usr/local/opt/openssl/bin:/usr/local/opt/postgresql@9.6/bin:/usr/local/opt/openssl/bin:/Users/thejoker/.nvm/versions/node/v10.5.0/bin:/usr/local/opt/postgresql@9.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/thejoker/.rvm/bin:/Users/thejoker/.rvm/bin:/Users/thejoker/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "@ddatabase/protocol",
+    "version": "0.3.0",
+    "description": "dDatabase Protocol Stream",
+    "main": "index.js",
+    "dependencies": {
+      "brfs": "^1.4.3",
+      "inherits": "^2.0.3",
+      "protocol-buffers": "^3.2.1",
+      "readable-stream": "^2.2.6",
+      "sodium-universal": "^2.0.0",
+      "sorted-indexof": "^1.0.0",
+      "varint": "^5.0.0"
+    },
+    "devDependencies": {
+      "choppa": "^1.0.2",
+      "standard": "^9.0.1",
+      "tape": "^4.6.3"
+    },
+    "scripts": {
+      "test": "standard && tape test.js"
+    },
+    "browserify": {
+      "transform": [
+        "brfs"
+      ]
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: git
+  Arguments: commit -m v0.3.0
+  Directory: /Users/thejoker/LIBRARIES/ddatabase
+  Output:
+  error: insufficient permission for adding an object to repository database .git/objects
+  error: insufficient permission for adding an object to repository database .git/objects
+  error: Error building trees
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:182:13)
+      at maybeClose (internal/child_process.js:961:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:248:5)
